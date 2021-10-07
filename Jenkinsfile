@@ -1,7 +1,7 @@
 pipeline {     
     agent any      
        stages { 
-         stage('BuildingHeartPrectionPod'){   
+         stage('BuildingPneumoniaPrectionPod'){   
            steps {                   
            sh 'sudo kubectl create deployment pneumoniapredictor  --image=aniketsantra25/pneumonia_predictor:v1   --kubeconfig /root/admin.conf'
            sh 'sudo kubectl expose deployment pneumoniapredictor --type=NodePort  --port=4444   --kubeconfig /root/admin.conf'                          
