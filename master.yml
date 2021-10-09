@@ -1,0 +1,3 @@
+- hosts: MasterNode
+  roles:
+        - master_node

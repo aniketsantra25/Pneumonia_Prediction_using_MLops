@@ -1,0 +1,4 @@
+- hosts: WorkerNode
+  roles: 
+        
+        - worker_node
