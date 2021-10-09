@@ -1,7 +1,7 @@
 provider "aws" {
   region     = "ap-south-1"
-  access_key = "AKIAU52YSY4E5VNEKYVL"
-  secret_key = "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"
+  access_key = "A***********"
+  secret_key = "B*****************"
   profile    = "aniket"
 }
 variable "cidr_vpc" {
