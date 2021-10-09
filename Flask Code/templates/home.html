@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h2>Home Page</h2>
+<p>Welcome back, {{ username }}!</p>
+<div>
+    <form action="/prediction" method="POST" enctype="multipart/form-data">
+       <!-- <label for="formFileMultiple" class="form-label"  type="file"></label>-->
+        <center><input class=form-control  type="file" name='img' /></center>
+        <center><input type="submit" value="Submit"></center>
+    </form>
+
+    <p class=heading2>
+        <center><strong>Note:</strong> Enter .jpg format only*</center>
+    </p>
+{% endblock %}
